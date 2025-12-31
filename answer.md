@@ -1,8 +1,8 @@
 # 第2次作業題目-作業-QZ2
 >
->學號：1234567
+>學號：112111133
 ><br />
->姓名：王小明
+>姓名：林凱翎
 ><br />
 >作業撰寫時間：180 (mins，包含程式撰寫時間)
 ><br />
@@ -15,47 +15,25 @@
 
 ## 說明程式與內容
 
-開始寫說明，該說明需說明想法，
-並於之後再對上述想法的每一部分將程式進一步進行展現，
-若需引用程式區則使用下面方法，
-若為.cs檔內程式除了於敘述中需註明檔案名稱外，
-還需使用語法` ```語言種類 程式碼 ``` `，其中語言種類若是要用python則使用py，java則使用java，C/C++則使用cpp，
-下段程式碼為語言種類選擇csharp使用後結果：
-
-```csharp
-public void mt_getResult(){
-    ...
-}
-```
-
-若要於內文中標示部分網頁檔，則使用以下標籤` ```html 程式碼 ``` `，
-下段程式碼則為使用後結果：
-
-```html
-<%@ Page Language="C#" AutoEventWireup="true" ...>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" ...>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
-```
-更多markdown方法可參閱[https://ithelp.ithome.com.tw/articles/10203758](https://ithelp.ithome.com.tw/articles/10203758)
-
 請在撰寫"說明程式與內容"該塊內容，請把原該塊內上述敘述刪除，該塊上述內容只是用來指引該怎麼撰寫內容。
 
 1. HTTP Status Code 有哪些？怎麼分類？
 
 Ans:
+1xx（Informational 資訊）：請求已收到，處理中
+例：100 Continue
+
+2xx（Success 成功）：請求成功
+例：200 OK（最常見）、201 Created（新增成功）
+
+3xx（Redirection 重新導向）：需要轉址或使用快取
+例：301 Moved Permanently、302 Found、304 Not Modified
+
+4xx（Client Error 用戶端錯誤）：請求有問題（網址錯、沒權限、找不到）
+例：400 Bad Request、401 Unauthorized、403 Forbidden、404 Not Found
+
+5xx（Server Error 伺服器錯誤）：伺服器端處理失敗
+例：500 Internal Server Error、502 Bad Gateway、503 Service Unavailable
 
 
 2. 在 Express 中，設計基本上可以分成幾層？請依上述回答實作一個後端與前端的網站(需有程式碼)，並且將結果和執行畫面顯示於該份md，並逐步說明。
